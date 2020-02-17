@@ -1,0 +1,250 @@
+.contactComponent {
+  background: url('../../assets/images/home/bg1.png') no-repeat;
+  background-size: cover;
+  position: relative;
+  min-height: 500px;
+  padding-top: 5%;
+}
+.imageHeader {
+  height: 440px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  background: linear-gradient(rgba(136,136,136,0.65), rgba(136,136,136,0.65)), url(../../assets/images/home/Food2.png) no-repeat;
+  will-change: transform;
+  animation: imageAnimate 400ms cubic-bezier(0.23, 1, 0.32, 1) 200ms backwards;
+  background-size: cover;
+}
+.contactIcon {
+  background: url('../../assets/images/icons/contact.png') no-repeat;
+  margin: 0 auto;
+  margin-top: 5%;
+  position: relative;
+  width: 70px;
+  height: 70px;
+  background-size: contain;
+  cursor: pointer;
+  -moz-animation: bounce 2s infinite;
+  -webkit-animation: bounce 2s infinite;
+  animation: bounce 2s infinite;
+}
+.contactIcon:hover {
+  -moz-animation-play-state: paused;
+  -webkit-animation-play-state: paused;
+  animation-play-state: paused;
+}
+.headerSection {
+  height: auto;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  font-family: Comic Sans MS, Comic Sans, cursive;
+  color: floralWhite;
+  font-size: 18px;
+  line-height: 30px;
+  padding: 30px 0;
+  font-weight: 400;
+  top: 20px;
+  transform-origin: left center 0px;
+  animation: titleAnimate 400ms cubic-bezier(0.23, 1, 0.32, 1) 800ms backwards;
+}
+.titleSection h1 {
+  font-size: 80px;
+  line-height: 60px;
+  color: purple;
+  font-family: 'Tangerine', cursive;
+  border-bottom: 3px solid floralwhite;
+  display: inline-block;
+  padding: 3%;
+}
+.contactBody {
+  text-align: center;
+  transform-origin: right center 0px;
+  animation: titleAnimate 400ms cubic-bezier(0.23, 1, 0.32, 1) 1000ms backwards;
+  padding-bottom: 5%;
+}
+.contactBody h2 {
+  font-family: 'Tangerine', cursive;
+  padding-top: 5%;
+  padding-bottom: 3%;
+  color: floralwhite;
+  line-height: 32px;
+  font-size: 28px;
+  text-transform: uppercase;
+}
+.contactBody div {
+  padding: 15px;
+}
+.contactBody .label {
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 0.2em;
+  margin-bottom: 0.75em;
+  margin-top: 0px;
+  opacity: 0.5;
+  text-transform: uppercase;
+  color: floralwhite;
+  font-family: Roboto, sans-serif;
+}
+.contactBody .valueArea {
+  font-size: 1.272em;
+  margin-bottom: 2rem;
+  max-width: 27rem;
+  margin: 0 auto;
+}
+.contactBody .value, .contactBody .valueAddr {
+  position: relative;
+  z-index: 80;
+  text-decoration: none;
+  color: olive;
+  cursor: pointer;
+  font-size: 1.272em;
+  margin-bottom: 2rem;
+  max-width: 27rem;
+  font-family: cursive;
+}
+.contactBody .valueAddr {
+  font-size: 16px;
+}
+.contactBody .value:hover::after{
+	-webkit-animation:hoverAnimate 600ms cubic-bezier(0.23,1,0.32,1) both;
+	animation:hoverAnimate 600ms cubic-bezier(0.23,1,0.32,1) both;
+}
+.contactBody .value::after {
+  -webkit-animation:valueAnimate 200ms cubic-bezier(0.23,1,0.32,1);
+  animation:egaNpg 200ms cubic-bezier(0.23,1,0.32,1);
+  background: floralwhite;
+  bottom:-0.25em;
+  content:'';
+  height:0.1em;
+  left:0;
+  opacity:0;
+  pointer-events:none;
+  position:absolute;
+  right:0;
+  -webkit-transform:translateY(-0.4em) scale(1,6);
+  -ms-transform:translateY(-0.4em) scale(1,6);
+  transform:translateY(-0.4em) scale(1,6);
+  will-change:transform;
+}
+
+@-webkit-keyframes valueAnimate {
+  0% {
+    opacity:1;
+    -webkit-transform:translateY(0) scale(1,1);
+    -ms-transform:translateY(0) scale(1,1);
+    transform:translateY(0) scale(1,1);
+  }
+  100% {
+    opacity:0;
+    -webkit-transform:translateY(-0.4em) scale(1,6);
+    -ms-transform:translateY(-0.4em) scale(1,6);
+    transform:translateY(-0.4em) scale(1,6);
+  }
+}
+@keyframes valueAnimate{
+  0% {
+    opacity:1;
+    -webkit-transform:translateY(0) scale(1,1);
+    -ms-transform:translateY(0) scale(1,1);
+    transform:translateY(0) scale(1,1);
+  }
+  100% {
+    opacity:0.15;
+    -webkit-transform:translateY(-0.4em) scale(1,6);
+    -ms-transform:translateY(-0.4em) scale(1,6);
+    transform:translateY(-0.4em) scale(1,6);
+  }
+}
+@-webkit-keyframes hoverAnimate{
+	40% {
+		opacity:0.3;
+		-webkit-transform:translateY(-0.4em) scale(0.02,6);
+		-ms-transform:translateY(-0.4em) scale(0.02,6);
+		transform:translateY(-0.4em) scale(0.02,6);
+	}
+	60% {
+		-webkit-transform:translateY(0) scale(0.02,1);
+		-ms-transform:translateY(0) scale(0.02,1);
+		transform:translateY(0) scale(0.02,1);
+	}
+	100% {
+		opacity:1;
+		-webkit-transform:translateY(0) scale(1,1);
+		-ms-transform:translateY(0) scale(1,1);
+		transform:translateY(0) scale(1,1);
+	}
+}
+@keyframes hoverAnimate{
+	40% {
+		opacity:0.3;
+		-webkit-transform:translateY(-0.4em) scale(0.02,6);
+		-ms-transform:translateY(-0.4em) scale(0.02,6);
+		transform:translateY(-0.4em) scale(0.02,6);
+	}
+	60% {
+		-webkit-transform:translateY(0) scale(0.02,1);
+		-ms-transform:translateY(0) scale(0.02,1);
+		transform:translateY(0) scale(0.02,1);
+	}
+	100% {
+		opacity:1;
+		-webkit-transform:translateY(0) scale(1,1);
+		-ms-transform:translateY(0) scale(1,1);
+		transform:translateY(0) scale(1,1);
+	}
+}
+
+@-webkit-keyframes imageAnimate {
+  from {
+    -webkit-transform:scale(1,0);
+    -ms-transform:scale(1,0);
+    transform:scale(1,0);
+  }
+}
+@keyframes imageAnimate {
+  from {
+    -webkit-transform:scale(1,0);
+    -ms-transform:scale(1,0);
+    transform:scale(1,0);
+  }
+}
+@-webkit-keyframes titleAnimate {
+  from {
+    -webkit-transform:scale(0,1);
+    -ms-transform:scale(0,1);
+    transform:scale(0,1);
+  }
+}
+@keyframes titleAnimate {
+  from {
+    -webkit-transform:scale(0,1);
+    -ms-transform:scale(0,1);
+    transform:scale(0,1);
+  }
+}
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+
+
+@media screen and (min-width: 768px) {
+  .headerSection {
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+  }
+}

@@ -1,0 +1,79 @@
+<div class="contactComponent">
+  <div class="imageHeader"></div>
+  <section class="headerSection">
+    <div class="titleSection">
+      <h1>Let's Chat</h1>
+      <h2>Let’s make something awesome together.</h2>
+      <p>Drop us a line, or give us a heads up if you’re interested in visiting us.</p>
+    </div>
+  </section>
+  <div class="contactIcon waves-effect waves-light" (click)="contactform.show()" mdbRippleRadius title="Contact Form"></div>
+  <div class="contactBody">
+    <div class="phoneSection">
+      <h4 class="label">Call Us</h4>
+      <p class="valueArea">
+        <a class="value" href="tel:9848642255">+91 984.864.2255</a>
+      </p>
+    </div>
+    <div class="emailSection">
+      <h4 class="label">Mail through</h4>
+      <p class="valueArea">
+        <a class="value" href="mailto:foodsontruck@gmail.com?subject=Hey%20FoodOnTruck!%20">foodsOnTruck@gmail.com</a>
+      </p>
+    </div>
+    <div class="addressSection">
+      <h4 class="label">Resides Here</h4>
+      <p class="valueArea">
+        <span class="valueAddr">Plot No: 79, Devar Colony,<br>North Inner Street, OMR, Semmencherry, <br> Chennai - 600119, Tamil nadu, India.</span>
+      </p>
+    </div>
+  </div>
+</div>
+<div mdbModal #contactform="mdb-modal" class="modal fade" id="modalContactForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog cascading-modal" role="document">
+      <!--Content-->
+      <div class="modal-content">
+
+          <!--Header-->
+          <div class="modal-header light-blue darken-3 white-text">
+              <h4 class="title"><i class="fa fa-pencil"></i> Contact form</h4>
+              <button type="button" class="close waves-effect waves-light" data-dismiss="modal" aria-label="Close" (click)="contactform.hide()">
+                  <span aria-hidden="true">×</span>
+              </button>
+          </div>
+          <!--Body-->
+          <div class="modal-body mb-0">
+              <div class="md-form form-sm">
+                  <i class="fa fa-envelope prefix"></i>
+                  <input mdbActive type="text" id="form19" class="form-control">
+                  <label for="form19">Your name</label>
+              </div>
+
+              <div class="md-form form-sm">
+                  <i class="fa fa-lock prefix"></i>
+                  <input mdbActive type="password" id="form20" class="form-control">
+                  <label for="form20">Your email</label>
+              </div>
+
+              <div class="md-form form-sm">
+                  <i class="fa fa-tag prefix"></i>
+                  <input mdbActive type="text" id="form21" class="form-control">
+                  <label for="form21">Subject</label>
+              </div>
+
+              <div class="md-form form-sm">
+                  <i class="fa fa-pencil prefix"></i>
+                  <textarea mdbActive type="text" id="form8" class="md-textarea mb-0"></textarea>
+                  <label for="form8">Your message</label>
+              </div>
+
+              <div class="text-center mt-1-half">
+                  <button class="btn btn-info mb-2 waves-light" mdbRippleRadius>Send <i class="fa fa-send ml-1"></i></button>
+              </div>
+
+          </div>
+      </div>
+      <!--/.Content-->
+  </div>
+</div>
+<!--Modal: Contact form-->

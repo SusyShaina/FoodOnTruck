@@ -1,0 +1,97 @@
+footer {
+    width: 100%;
+    bottom: 0;
+    font-family: 'Merriweather', serif;
+    color: floralwhite;
+    position: fixed;
+    transition: bottom 0.2s ease-in-out;
+	left:0;
+    height: 3em;
+	-webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+}
+.rightCorner {
+    float: right;
+    margin: -5px 5px;
+}
+.rightCorner a{
+    padding-left: 10px;  
+    padding-right: 10px;
+}
+.leftCorner {
+    float: left;
+    margin: -5px 5px;
+}
+
+footer #button{
+  background: url('../../assets/images/icons/doubledown.png') no-repeat;
+  background-size: contain;
+  width: 40px;
+  height: 40px;
+  margin:0 auto;
+  position:relative;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  transition: all 1s ease;
+  animation: bounce 3s;
+  animation-fill-mode: both;
+  animation-timing-function: ease-in;
+  animation-iteration-count: infinite;
+  cursor: pointer;
+}
+footer #button:hover{
+  width:40px;
+  height:40px;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  transition: all 1s ease;
+  animation-play-state: paused;
+}
+footer:hover {
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  transition: all 1s ease;
+  height: 7em;
+}
+footer #container{
+  margin-top: 8px;
+  width:100%;
+  height:100%;
+  position:relative;
+  top:0;
+  left:0;
+  background: transparent;
+}
+footer #cont{
+  position:relative;
+  top: 25%;
+  height:auto;
+  margin:0 auto;
+}
+.footer_center{
+  width:500px;
+  float:left;
+  text-align:center;
+}
+footer h3{
+  font-family: 'Helvetica';
+  font-size: 30px;
+  font-weight: 100;
+  margin-top:70px;
+  margin-left:40px;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+  40% {transform: translateY(-30px);}
+  60% {transform: translateY(-15px);}
+}

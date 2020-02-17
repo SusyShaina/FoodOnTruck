@@ -1,0 +1,198 @@
+<div class="container">
+    <nav class="navbar navbar-expand-lg navbar-light default-color lighten-4 fixed-top scrolling-navbar">
+        <!-- Navbar brand -->
+        <logo>
+            <a class="navbar-brand" routerLink="/home" routerLinkActive="active-link" title="To Reach Home">
+                <img src="../../assets/images/icons/logo.png" style="width:35px" alt="FoodOnTruck"></a>
+        </logo>
+
+        <!-- Collapse button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav" aria-controls="basicExampleNav"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Collapsible content -->
+        <div class="collapse navbar-collapse" id="basicExampleNav">
+            <ul class="navbar-nav mr-auto">
+                <!-- Links -->
+                <li class="nav-item">
+                    <a class="nav-link waves-effect waves-light" mdbRippleRadius routerLink="/about" routerLinkActive="active-link" title="what we do, why we do it..!!" data-hover="About Us">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link waves-effect waves-light" mdbRippleRadius routerLink="/menu" routerLinkActive="active-link" title="we are passionate about Food Taste..!!" data-hover="Menu">Menu</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link waves-effect waves-light" mdbRippleRadius routerLink="/service" routerLinkActive="active-link" title="We serve for People's Happiness..!!"data-hover="Food Service">Food Service</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link waves-effect waves-light" mdbRippleRadius routerLink="/team" routerLinkActive="active-link" title="We are the Food Lovers..!!" data-hover="Our Gang">Our Gang</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link waves-effect waves-light" mdbRippleRadius routerLink="/contact" routerLinkActive="active-link" title="Want to Contact Us..??"data-hover="Let's Chat">Let's Chat</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav ml-auto nav-flex-icons">
+                <li class="nav-item dropdown" dropdown>
+                    <a dropdownToggle type="button" class="nav-link dropdown-toggle waves-effect waves-light" mdbRippleRadius><i class="fa fa-user"></i><span class="caret"></span></a>
+                    <div *dropdownMenu class="dropdown-menu dropdown dropdown-primary" role="menu">
+                        <a href="" class="dropdown-item waves-effect waves-light" data-toggle="modal" data-target="#modalLRForm">Get In/Join Us</a>
+                        <a href="" class="dropdown-item waves-effect waves-light" data-toggle="modal" data-target="#modalLoginForm">Get In..!!</a>
+                        <a href="" class="dropdown-item waves-effect waves-light" data-toggle="modal" data-target="#modalRegisterForm">Wanna to Join..!!</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <!-- Collapsible content -->
+    </nav>
+    <!--/.Navbar-->
+</div>
+    <!--Modal: Login with Avatar Form-->
+    <div class="modal fade" id="modalLoginForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog cascading-modal modal-avatar" role="document">
+            <!--Content-->
+            <div class="modal-content">
+                <!--Header-->
+                <div class="modal-header">
+                    <div alt="avatar" class=" avatar-image rounded-circle img-responsive"></div>
+                </div>
+                <!--Body-->
+                <h5 class="modal-body center">Welcome 2 Foodie's Hub..!!</h5>					
+                <div class="modal-body mx-3 center">
+                    <mat-radio-group>
+                        <mat-radio-button value="0">Login Via Mobile</mat-radio-button>
+                        <mat-radio-button value="1">Login Via Email</mat-radio-button>
+                    </mat-radio-group>
+                </div>
+                <div class="modal-body mx-3 email">
+                    <div class="md-form mb-5">
+                        <i class="fa fa-envelope prefix grey-text"></i>
+                        <input type="email" id="defaultForm-email" class="form-control validate">
+                        <label data-error="wrong" data-success="right" for="defaultForm-email">Your email</label>
+                    </div>
+                    <div class="md-form mb-4">
+                        <i class="fa fa-lock prefix grey-text"></i>
+                        <input type="password" id="defaultForm-pass" class="form-control validate">
+                        <label data-error="wrong" data-success="right" for="defaultForm-pass">Your password</label>
+                    </div>						
+                    <div class="text-center mt-4">
+                        <button class="btn btn-default mt-1">Login<i class="fa fa-sign-in ml-1"></i></button>
+                    </div>
+                </div>
+                <div class="modal-body mx-3 mobile">
+                    <div class="md-form mb-5">
+                        <i class="fa fa-mobile prefix grey-text"></i>
+                        <input type="text" id="defaultForm-mobile" class="form-control validate">
+                        <label data-error="wrong" data-success="right" for="defaultForm-mobile">Your Mobile Number</label>
+                    </div>
+                    
+                    <div class="text-center mt-4">
+                        <button class="btn btn-default mt-1">Send OTP<i class="fa fa-paper-plane-o ml-1"></i></button>
+                    </div>
+                    
+                    <div class="md-form mb-4">
+                        <i class="fa fa-key prefix grey-text"></i>
+                        <input type="text" id="defaultForm-otp" class="form-control validate">
+                        <label data-error="wrong" data-success="right" for="defaultForm-otp">Enter OTP</label>
+                    </div>
+                </div>
+                <!--Footer-->
+                <div class="modal-footer display-footer">
+                    <div class="options text-center text-md-right mt-1">
+                        <p>Not a member? <a href="" class="dropdown-item waves-effect waves-light" data-toggle="modal" data-target="#modalRegister">Get In..!!</a></p>
+                        <p>Forgot <a href="#" class="default-text">Password?</a></p>
+                    </div>
+                    <button type="button" class="btn btn-outline-default waves-effects ml-auto" data-dismiss="modal">Close</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+<!--Modal: Login Form-->
+<!--Modal: Login / Register Form-->
+<div class="modal fade" id="modalLRForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog cascading-modal" role="document">
+        <!--Content-->
+        <div class="modal-content">
+            <!--Modal cascading tabs-->
+            <div class="modal-c-tabs">
+                <!-- Nav tabs -->
+                <ul class="nav nav-tabs tabs-2 light-blue darken-3" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" data-toggle="tab" href="#panel7" role="tab"><i class="fa fa-user mr-1"></i>Get In</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#panel8" role="tab"><i class="fa fa-user-plus mr-1"></i>Join Us</a>
+                    </li>
+                </ul>
+                <!-- Tab panels -->
+                <div class="tab-content">
+                    <!--Panel 7-->
+                    <div class="tab-pane fade in show active" id="panel7" role="tabpanel">
+                        <!--Body-->
+                        <div class="modal-body mb-1">
+                            <div class="md-form form-sm mb-5">
+                                <i class="fa fa-envelope prefix"></i>
+                                <input type="email" id="modalLRInput10" class="form-control form-control-sm validate">
+                                <label data-error="wrong" data-success="right" for="modalLRInput10">Your email</label>
+                            </div>
+                            <div class="md-form form-sm mb-4">
+                                <i class="fa fa-lock prefix"></i>
+                                <input type="password" id="modalLRInput11" class="form-control form-control-sm validate">
+                                <label data-error="wrong" data-success="right" for="modalLRInput11">Your password</label>
+                            </div>
+                            <div class="text-center mt-2">
+                                <button class="btn btn-default">Log in <i class="fa fa-sign-in ml-1"></i></button>
+                            </div>
+                        </div>
+                        <!--Footer-->
+                        <div class="modal-footer">
+                            <div class="options text-center text-md-right mt-1">
+                                <p>Not a member? <a href="#" class="blue-text">Sign Up</a></p>
+                                <p>Forgot <a href="#" class="blue-text">Password?</a></p>
+                            </div>
+                            <button type="button" class="btn btn-outline-default waves-effect ml-auto" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                    <!--/.Panel 7-->
+                    <!--Panel 8-->
+                    <div class="tab-pane fade" id="panel8" role="tabpanel">
+                        <!--Body-->
+                        <div class="modal-body">
+                            <div class="md-form form-sm mb-5">
+                                <i class="fa fa-envelope prefix"></i>
+                                <input type="email" id="modalLRInput12" class="form-control form-control-sm validate">
+                                <label data-error="wrong" data-success="right" for="modalLRInput12">Your email</label>
+                            </div>
+                            <div class="md-form form-sm mb-5">
+                                <i class="fa fa-lock prefix"></i>
+                                <input type="password" id="modalLRInput13" class="form-control form-control-sm validate">
+                                <label data-error="wrong" data-success="right" for="modalLRInput13">Your password</label>
+                            </div>
+                            <div class="md-form form-sm mb-4">
+                                <i class="fa fa-lock prefix"></i>
+                                <input type="password" id="modalLRInput14" class="form-control form-control-sm validate">
+                                <label data-error="wrong" data-success="right" for="modalLRInput14">Repeat password</label>
+                            </div>
+                            <div class="text-center form-sm mt-2">
+                                <button class="btn btn-default">Sign up <i class="fa fa-sign-in ml-1"></i></button>
+                            </div>
+                        </div>
+                        <!--Footer-->
+                        <div class="modal-footer">
+                            <div class="options text-right">
+                                <p class="pt-1">Already have an account? <a href="#" class="blue-text">Log In</a></p>
+                            </div>
+                            <button type="button" class="btn btn-outline-default waves-effect ml-auto" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                    <!--/.Panel 8-->
+                </div>
+
+            </div>
+        </div>
+        <!--/.Content-->
+    </div>
+</div>
+<!--Modal: Login / Register Form-->
+

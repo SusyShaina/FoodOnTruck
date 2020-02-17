@@ -1,0 +1,86 @@
+.navbar-nav li {
+    list-style: none;
+    text-decoration: none;
+    text-decoration-color: none;
+}
+a {
+    line-height: 27px;
+    font-family: cursive;
+    font-size: 18px;
+    color: floralwhite;
+}
+
+.navbar-nav.mr-auto a {
+	color: rgba(0,0,0,0.2);
+	font-weight: 700;
+    text-shadow: none;
+    margin: 0 15px;
+}
+
+.navbar-nav.mr-auto a::before {
+	color: #fff;
+	content: attr(data-hover);
+	position: absolute;
+	-webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
+	-moz-transition: -moz-transform 0.3s, opacity 0.3s;
+	transition: transform 0.3s, opacity 0.3s;
+}
+
+.navbar-nav.mr-auto a:hover::before,
+.navbar-nav.mr-auto a:focus::before {
+	-webkit-transform: scale(0.9);
+	-moz-transform: scale(0.9);
+	transform: scale(0.9);
+	opacity: 0;
+}
+.nav-flex-icons {
+	padding-right: 10%;
+}
+.modal-body.center {
+	text-align: center;
+}
+.modal-dialog {
+	font-family: Comic Sans, Comic Sans MS, cursive;
+}
+.custom-control-label {
+    margin-bottom: 0;
+    color: #2bbbad;
+}
+.modal-dialog h5 {
+	color: darkcyan !important;
+	font-size: 28px;
+	animation: flash 400ms cubic-bezier(0.23, 1, 0.32, 1) 400ms backwards;
+}
+.modal-body {
+	animation: faded 800ms ease 800ms backwards;
+}
+.avatar-image {
+	background: url('../../assets/images/icons/spritesheet.png') no-repeat -143px -5px;
+	width: 128px;
+	height: 128px;
+	margin: 0 auto;
+}
+.modal-content {
+	background-color: black;
+}
+.form-control {
+	color: ghostwhite !important;
+}
+
+@-webkit-keyframes flash{ 
+	from{ 
+		-webkit-transform:scale(0,1);
+		-ms-transform:scale(0,1);
+		transform:scale(0,1);
+	}
+}
+@keyframes flash{
+	from{
+		-webkit-transform:scale(0,1);
+		-ms-transform:scale(0,1);
+		transform:scale(0,1);
+	}
+}
+
+@-webkit-keyframes faded {from{opacity:0;}}
+@keyframes faded {from{opacity:0;}}

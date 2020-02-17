@@ -1,0 +1,72 @@
+/*animated- bg snow*/
+.snow-container {
+  height: auto;
+  width: 200%;
+  max-width: 200%;
+  top: 0;
+  overflow: hidden;
+  z-index: -1;
+  pointer-events: none;
+}
+
+.snow {
+  display: block;
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  pointer-events: none;
+  transform: translate3d(0, -100%, 0);
+  animation: snow linear infinite;
+}
+.snow.foreground {
+  background-image: url("https://fadupla.com/img/snow-flakes-1.png");
+  -webkit-animation-duration: 50s;
+  animation-duration: 50s;
+}
+.snow.foreground.layered {
+  -webkit-animation-delay: 30s;
+  animation-delay: 30s;
+}
+.snow.middleground {
+  background-image: url("https://fadupla.com/img/snow-flakes-2.png");
+  -webkit-animation-duration: 40s;
+  animation-duration: 40s;
+}
+.snow.middleground.layered {
+  -webkit-animation-delay: 10s;
+  animation-delay: 10s;
+}
+.snow.background {
+  background-image: url("https://fadupla.com/img/snow-flakes-1.png");
+  -webkit-animation-duration: 30s;
+  animation-duration: 30s;
+}
+.snow.background.layered {
+  -webkit-animation-delay: 15s;
+  animation-delay: 15s;
+}
+
+@-webkit-keyframes snow {
+  0% {
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(0%, 100%, 0);
+    transform: translate3d(0%, 100%, 0);
+  }
+}
+
+@keyframes snow {
+  0% {
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(0%, 100%, 0);
+    transform: translate3d(0%, 100%, 0);
+  }
+}

@@ -1,0 +1,39 @@
+.notFoundSection {
+  background-color: #F0EFEB;
+  height: 870px;
+  text-align: center;
+}
+.image {
+  text-align: center;
+  margin-top: 15%;
+}
+body {
+  height: 100%;
+  display: block;
+  position: relative;
+}
+
+a, a:active, a:focus {
+  text-decoration: none;
+  outline: none;
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+  cursor: pointer;
+  color: darkslateblue;
+  font-weight: 700;
+  font-size: 32px;
+  font-family: cursive;
+  margin:auto;
+  display: block;
+}
+
+a:hover {
+  color: olive;
+}
+
+.desc {
+  font-family: cursive;
+  font-size: 24px;
+  font-weight: 400;
+  color: olive;
+}

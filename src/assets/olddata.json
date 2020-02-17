@@ -1,0 +1,356 @@
+{
+  "south": [
+    {
+        "img" : "assets/images/menus/south/item1.png",
+        "name": "Plain Dosa Varities",
+        "desc": "Crispy Plain/Ghee/Butter Roast",
+        "rate": "40₹ - 70₹"
+    },
+    {
+        "img" : "assets/images/menus/south/item2.png",
+        "name": "Masala Dosa Varieties",
+        "desc": "Tangy Aloo/Gobi/Paneer/Mushroom Dosa's(Ghee)",
+        "rate": "50₹ - 100₹"
+    },
+    {
+        "img" : "assets/images/menus/south/item3.png",
+        "name": "Mirchi Spl Dosas",
+        "desc": "Kara/Chill Garlic/Mysore Kara/Andhra Kara Spl Roast",
+        "rate": "50₹ - 80₹"
+    },
+    {
+        "img" : "assets/images/menus/south/item4.png",
+        "name": "American Spl Dosas",
+        "desc": "Cheese/Cheese Masala/ Corn/ Corn Masala Dosa's",
+        "rate": "40₹ - 70₹"
+    },
+    {
+        "img" : "assets/images/menus/south/item5.png",
+        "name": "Home Spl Dosa's Varities",
+        "desc": "Onion/Rava/Podi Roast",
+        "rate": "40₹ - 60₹"
+    },
+    {
+        "img" : "assets/images/menus/south/item6.png",
+        "name": "Pizza Dosa's Spl",
+        "desc": "Corn/Mozzarella/Veg/Chicken Pizza Dosa's",
+        "rate": "80₹ - 120₹"
+    },
+    {
+        "img" : "assets/images/menus/south/item7.png",
+        "name": "Uthappam Specials",
+        "desc": "Carrot/Veg/Onion/Rava/Podi/Spinach/5 Taste Spl uthappams",
+        "rate": "60₹ - 90₹"
+    },
+    {
+        "img" : "assets/images/menus/south/item8.png",
+        "name": "Non-Veg Spl Dosa's",
+        "desc": "Egg/Egg Masala//Chicken Masala/Chicken Keema Roll Dosa's",
+        "rate": "60₹ - 120₹"
+    },
+    {
+        "img" : "assets/images/menus/south/item9.png",
+        "name": "Plain Parota",
+        "desc": "Ghee/Veechu/Layered Parota's",
+        "rate": "60₹ - 90₹"
+    },
+    {
+        "img" : "assets/images/menus/south/item10.png",
+        "name": "Parota Spl",
+        "desc": "Chill/Gobi/Egg/Chicken/Kaima Parota's",
+        "rate": "70₹ - 120₹"
+    }
+  ],
+  "north": [
+    {
+        "img" : "assets/images/menus/north/item1.png",
+        "name": "Chat Bazzar is Here",
+        "desc": "Samosa/Dahi Vada/Bhel/Pani/Dahi Papdi Chats",
+        "rate": "20₹ - 40₹"
+    },
+    {
+        "img" : "assets/images/menus/north/item2.png",
+        "name": "Chrunchy Crispy Startes",
+        "desc": "Paneer Pakora/Aloo Fry/ Gobi 65/ Paneer 65/ Cabbage Pakora/ Paneer Lollipop",
+        "rate": "60₹ - 100₹"
+    },
+    {
+        "img" : "assets/images/menus/north/item3.png",
+        "name": "Tikka Varieties",
+        "desc": "Aloo/Paneer/Veg Tikka's",
+        "rate": "50₹ - 70₹"
+    },
+    {
+        "img" : "assets/images/menus/north/item4.png",
+        "name": "Fries Varieties",
+        "desc": "Cheese Bars/Paneer Balls/Paneer Fingers Starters",
+        "rate": "50₹ - 70₹"
+    },
+    {
+        "img" : "assets/images/menus/north/item5.png",
+        "name": "Paratha Varities",
+        "desc": "Aloo/Stuffed Veg/Paneer/Gobi/Methi Paratha's",
+        "rate": "40₹ - 60₹"
+    },
+    {
+        "img" : "assets/images/menus/north/item6.png",
+        "name": "Naan/Roti Spl",
+        "desc": "Butter/Plain/Garlic Naan & Roti's",
+        "rate": "30₹ - 40₹"
+    },
+    {
+        "img" : "assets/images/menus/north/item7.png",
+        "name": "Paneer Gravy Exclusive's",
+        "desc": "Spicy Achari/Butter Masal/Do Pyaza/Matar/Kadai Curries",
+        "rate": "90₹ - 140₹"
+    },
+    {
+        "img" : "assets/images/menus/north/item8.png",
+        "name": "North Curry Spl",
+        "desc": "Channa Masala/Aloo/Dal/Veg/Peas/Potato/Veg Koftha Curries",
+        "rate": "80₹ - 150₹"
+    }
+  ],
+  "asian" :[
+    {
+        "img" : "assets/images/menus/asian/item1.png",
+        "name": "Dim sum",
+        "desc": "Momo/Tangy Schezwan Momo/Veg Kothe/Veg Kathi roll",
+        "rate": "60₹ - 90₹"
+    },
+    {
+        "img" : "assets/images/menus/asian/item2.png",
+        "name": "Fries",
+        "desc": "Veg spring roll/Chilli Crispy potatoes/Spicy Fried Paneer/Thai Chilli Paneer/Thai Chilli Gobi marinated with spicy sauce and deep fry",
+        "rate": "60₹ - 120₹"
+    },
+    {
+        "img" : "assets/images/menus/asian/item3.png",
+        "name": "Dargon Fries",
+        "desc": "Veg/Paneer/Potato/Baby corn/Gobi - Tossed in sweet chilli sauce.",
+        "rate": "80₹ - 120₹"
+    },
+    {
+        "img" : "assets/images/menus/asian/item4.png",
+        "name": "Thai Spl",
+        "desc": "Corn Fritters with Tofu",
+        "rate": "70₹ - 80₹"
+    },
+    {
+        "img" : "assets/images/menus/asian/item5.png",
+        "name": "Manchurian's",
+        "desc": "Soya Chunks/Gobi/Paneer/Baby corn/Veg ball Gravy/Dry with Tangy Spices/Schezwan Sauce.",
+        "rate": "70₹ - 120₹"
+    },
+    {
+        "img" : "assets/images/menus/asian/item6.png",
+        "name": "Thai Fried Rice",
+        "desc": "Tossed rice with Veg/Paneer/Gobi",
+        "rate": "70₹ - 100₹"
+    },
+    {
+        "img" : "assets/images/menus/asian/item7.png",
+        "name": "Chinese Fried Rice",
+        "desc": "Tossed rice with Veg/Paneer/Gobi/Mushroom/Babycorn/Egg (Schezwan available)",
+        "rate": "70₹ - 100₹"
+    },
+    {
+        "img" : "assets/images/menus/asian/item8.png",
+        "name": "Hakka Noodles",
+        "desc": "Veg/Egg/Chicken - Tossed with shredded vegetables",
+        "rate": "70₹ - 100₹"
+    },
+    {
+        "img" : "assets/images/menus/asian/item9.png",
+        "name": "Schezwan Noodles",
+        "desc": "Veg/Paneer/Gobi/Mushroom/Babycorn/Egg/Chicken - Tossed with Spicy sauce and shredded vegetables",
+        "rate": "70₹ - 100₹"
+    },
+    {
+        "img" : "assets/images/menus/asian/item10.png",
+        "name": "Chow mein",
+        "desc": "Veg/Egg/Chicken Noodles with red chilli spices and Soy Sauce Chinese Stir Fried Noodles",
+        "rate": "70₹ - 100₹"
+    },
+    {
+        "img" : "assets/images/menus/asian/item11.png",
+        "name": "Singapore Noodles",
+        "desc": "Tossed with Sweet and Spicy Sauces",
+        "rate": "100₹ - 120₹"
+    }
+  ],
+  "continent" :[
+    {
+        "img" : "assets/images/menus/continental/item1.png",
+        "name": "Fries",
+        "desc": "Smiley/French Fries/Nuggets/Poppers Fries",
+        "rate": "40₹ - 70₹"
+    },
+    {
+        "img" : "assets/images/menus/continental/item2.png",
+        "name": "Yummy Crispy",
+        "desc": "Veggie Finger/Cheese potato chops/Emo Potatos",
+        "rate": "50₹ - 70₹"
+    },
+    {
+        "img" : "assets/images/menus/continental/item3.png",
+        "name": "Corn toasties",
+        "desc": "Corn cheese bread toast",
+        "rate": "60₹ - 70₹"
+    },
+    {
+        "img" : "assets/images/menus/continental/item4.png",
+        "name": "Sweet corn fritters",
+        "desc": "cheese ball with sweet corn",
+        "rate": "60₹ - 70₹"
+    },
+    {
+        "img" : "assets/images/menus/continental/item5.png",
+        "name": "Mexican paneer",
+        "desc": "Paneer cubes tossed with mexican spices",
+        "rate": "90₹ - 110₹"
+    },
+    {
+        "img" : "assets/images/menus/continental/item6.png",
+        "name": "Sandwiches",
+        "desc": "Veg/Chilli cheese/Paneer/Gobi stuffed bread's pocket",
+        "rate": "50₹ - 80₹"
+    },
+    {
+        "img" : "assets/images/menus/continental/item7.png",
+        "name": "Toast",
+        "desc": "Cheese/Masala French/Cheese Masala Toasties",
+        "rate": "40₹ - 70₹"
+    },
+    {
+        "img" : "assets/images/menus/continental/item8.png",
+        "name": "Cheese Corn",
+        "desc": "Anju (Baked Sweet corn with cottage cheese and spices)",
+        "rate": "70₹ - 90₹"
+    },
+    {
+        "img" : "assets/images/menus/continental/item9.png",
+        "name": "French Kiss",
+        "desc": "A warm french toast drizzled with sweet maple syrup",
+        "rate": "70₹ - 80₹"
+    },
+    {
+        "img" : "assets/images/menus/continental/item10.png",
+        "name": "Pasta's",
+        "desc": "Veg/Schezwan/Cheese (Assorted with People's Choice)",
+        "rate": "80₹ - 120₹"
+    },
+    {
+        "img" : "assets/images/menus/continental/item11.png",
+        "name": "More Pasta's Spl",
+        "desc": "Pasta/Macaroni with White/Spicy Sauces",
+        "rate": "100₹ - 120₹"
+    },
+    {
+        "img" : "assets/images/menus/continental/item12.png",
+        "name": "Ohh Ohh Chopsuey",
+        "desc": "Fried Noodles with Spicy Sauces",
+        "rate": "100₹ - 120₹"
+    }
+  ],
+  "juices" :[
+    {
+        "img" : "assets/images/menus/juices/item1.png",
+        "name": "Mojito's",
+        "desc": "Blue Brust/Lemonda Drink",
+        "rate": "60₹ - 70₹"
+    },
+    {
+        "img" : "assets/images/menus/juices/item2.png",
+        "name": "Lemon Soda",
+        "desc": "Soda with Lemon flavoured touch",
+        "rate": "40₹ - 45₹"
+    },
+    {
+        "img" : "assets/images/menus/juices/item3.png",
+        "name": "Soft Drinks",
+        "desc": "Vibro/Sprite/7Up/Maaza",
+        "rate": "20₹ - 40₹"
+    },
+    {
+        "img" : "assets/images/menus/juices/item4.png",
+        "name": "Milky Juices",
+        "desc": "Rose/Badam/Pista Milk with nuts/basil seeds",
+        "rate": "40₹ - 60₹"
+    },
+    {
+        "img" : "assets/images/menus/juices/item5.png",
+        "name": "Choco Chaaki Shakes",
+        "desc": "Oreo/Kitkat/Dairy Milkshakes",
+        "rate": "50₹ - 70₹"
+    },
+    {
+        "img" : "assets/images/menus/juices/item6.png",
+        "name": "Ice Cream Spl",
+        "desc": "Vannila/Orange Scoops/Waffle",
+        "rate": "30₹ - 50₹"
+    }
+  ],
+  "platters" : [
+    {
+        "img" : "assets/images/menus/platter/item1.png",
+        "name": "Fries Platter",
+        "desc": "",
+        "rate": "100₹ - 150₹"
+    },
+    {
+        "img" : "assets/images/menus/platter/item2.png",
+        "name": "All in one - Momooo's",
+        "desc": "",
+        "rate": "100₹ - 150₹"
+    },
+    {
+        "img" : "assets/images/menus/platter/item3.png",
+        "name": "Wanna Try Home Food..!!",
+        "desc": "Home Spl with Rice, Chapathi and two curries",
+        "rate": "80₹ - 150₹"
+    },
+    {
+        "img" : "assets/images/menus/platter/item4.png",
+        "name": "Dosa Platter",
+        "desc": "Uthappam/Dosa types Special",
+        "rate": "90₹ - 140₹"
+    },
+    {
+        "img" : "assets/images/menus/platter/item5.png",
+        "name": "North Thali",
+        "desc": "",
+        "rate": "80₹ - 120₹"
+    },
+    {
+        "img" : "assets/images/menus/platter/item6.png",
+        "name": "Paratha Platter",
+        "desc": "",
+        "rate": "70₹ - 140₹"
+    },
+    {
+        "img" : "assets/images/menus/platter/item7.png",
+        "name": "Toastieeee Platter",
+        "desc": "",
+        "rate": "80₹ - 140₹"
+    },
+    {
+        "img" : "assets/images/menus/platter/item8.png",
+        "name": "Chinese Platter",
+        "desc": "",
+        "rate": "150₹ - 200₹"
+    },
+    {
+        "img" : "assets/images/menus/platter/item9.png",
+        "name": "One More chinese choice is here",
+        "desc": "",
+        "rate": "120₹ - 180₹"
+    },
+    {
+        "img" : "assets/images/menus/platter/item10.png",
+        "name": "Curries For Take Away",
+        "desc": "",
+        "rate": "150₹ - 200₹"
+    }
+  ]
+}

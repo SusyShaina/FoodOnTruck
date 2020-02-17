@@ -1,0 +1,162 @@
+<div class="menuComponent">
+  <div class="container">
+   <!-- <div class="carouselArea">
+        <!--Carousel Wrapper
+        <mdb-carousel id="carouselMenuRef" #carouselMenuRef [isControls]="false" class="carousel slide carousel-fade">
+            <mdb-slide>
+                <div class="view hm-black-slight">
+                <img class="d-block w-100" src="../../assets/images/menus/Food1.jpg" alt="First slide">
+                <div class="mask waves-light" mdbRippleRadius></div>
+              </div>
+            </mdb-slide>
+            <mdb-slide>
+                <div class="view hm-black-slight">
+                <img class="d-block w-100" src="../../assets/images/menus/Food2.jpg" alt="Second slide">
+                <div class="mask waves-light" mdbRippleRadius></div>
+              </div>
+            </mdb-slide>
+            <mdb-slide>
+              <div class="view hm-black-slight">
+                <img class="d-block w-100" src="../../assets/images/menus/Food3.jpg" alt="Third slide">
+                <div class="mask waves-light" mdbRippleRadius></div>
+              </div>
+            </mdb-slide>
+            <mdb-slide>
+              <div class="view hm-black-slight">
+                <img class="d-block w-100" src="../../assets/images/menus/Food4.jpg" alt="Fourth slide">
+                <div class="mask waves-light" mdbRippleRadius></div>
+              </div>
+            </mdb-slide>
+            <mdb-slide>
+              <div class="view hm-black-slight">
+                <img class="d-block w-100" src="../../assets/images/menus/Food5.jpg" alt="Fifth slide">
+                <div class="mask waves-light" mdbRippleRadius></div>
+              </div>
+            </mdb-slide>
+            <mdb-slide>
+              <div class="view hm-black-slight">
+                <img class="d-block w-100" src="../../assets/images/menus/Food6.jpg" alt="Sixth slide">
+                <div class="mask waves-light" mdbRippleRadius></div>
+              </div>
+            </mdb-slide>
+            <mdb-slide>
+              <div class="view hm-black-slight">
+                <img class="d-block w-100" src="../../assets/images/menus/Food7.jpg" alt="seventh slide">
+                <div class="mask waves-light" mdbRippleRadius></div>
+              </div>
+            </mdb-slide>
+            <mdb-slide>
+              <div class="view hm-black-slight">
+                <img class="d-block w-100" src="../../assets/images/menus/Food8.jpg" alt="eigth slide">
+                <div class="mask waves-light" mdbRippleRadius></div>
+              </div>
+            </mdb-slide>
+            <mdb-slide>
+              <div class="view hm-black-slight">
+                <img class="d-block w-100" src="../../assets/images/menus/Food9.jpg" alt="ninth slide">
+                <div class="mask waves-light" mdbRippleRadius></div>
+              </div>
+            </mdb-slide>
+            <mdb-slide>
+              <div class="view hm-black-slight">
+                <img class="d-block w-100" src="../../assets/images/menus/Food10.jpg" alt="tenth slide">
+                <div class="mask waves-light" mdbRippleRadius></div>
+              </div>
+            </mdb-slide>
+            <mdb-slide>
+              <div class="view hm-black-slight">
+                <img class="d-block w-100" src="../../assets/images/menus/Food11.jpg" alt="eleventh slide">
+                <div class="mask waves-light" mdbRippleRadius></div>
+              </div>
+            </mdb-slide>
+            <mdb-slide>
+              <div class="view hm-black-slight">
+                <img class="d-block w-100" src="../../assets/images/menus/Food12.jpg" alt="twevlth slide">
+                <div class="mask waves-light" mdbRippleRadius></div>
+              </div>
+            </mdb-slide>
+            <mdb-slide>
+              <div class="view hm-black-slight">
+                <img class="d-block w-100" src="../../assets/images/menus/Food13.jpg" alt="thirteenth slide">
+                <div class="mask waves-light" mdbRippleRadius></div>
+              </div>
+            </mdb-slide>
+          </mdb-carousel> -->
+        <!--/.Carousel Wrapper
+      </div>-->
+      
+  <div class="menuArea">
+    <div class="menuSection">
+      <h1 class="menuDesc">Our Special's</h1>
+      <p class="menuSub">Food Recipes Menu without any preservatives/food color..!!</p>
+    </div>
+    <div class="veganOption">
+      <div class="veganImage"></div>
+      <div class="vegDec">Are You Vegan..? then make use of this box...</div>
+      <div class="vegSwitch">
+        <mat-slide-toggle (change)="showVegMenu($event)" [checked]="vegChecked"></mat-slide-toggle>
+      </div>
+    </div>
+    <div class="left-arrow arrow" (click)="previousTab()"></div>
+    <mat-tab-group mat-stretch-tabs [(selectedIndex)]="selectedIndex">
+      <mat-tab label="Taste of South">
+          <ul *ngFor="let item of southItemArray; let i = index;" class="items">
+            <!--<mat-checkbox class="checkboxArea" [checked]="itemChecked" (click)="checkboxSelectionChange($event, i, item)"></mat-checkbox>-->
+            <li class="item"><img src="{{item.img}}"></li>
+            <li class="item desc"><span>{{item.name}}</span><span *ngIf=item.isVeg class="veganIcon"></span><br><em>{{item.desc}}</em> </li>
+            <li class="item cost" value="{{item.rate}}">{{item.rate}}</li>
+            <!-- <div class='itemOrderArea'>
+              <div class='countSection'>
+                    <span class='in minusIcon' id={{item}} (click)="decreaseItemCount($event)"></span>
+                    <span class='in itemCount' id={{item}}>{{itemCount}}</span>
+                    <span class='in plusIcon' id={{item}} (click)="increaseItemCount($event)"></span>
+                    <span class='in cart' id={{item}} (click)="addToCart($event)" title="Add to Cart"></span>
+              </div>
+            </div> -->            
+          </ul>
+      </mat-tab>
+      <mat-tab label="Taste of North">
+        <ul *ngFor="let item of northItemArray; let i = index;" class="items">
+          <!-- <mat-checkbox class="checkboxArea" [(ngModel)]="itemChecked" (change)="checkboxSelectionChange()">Checked</mat-checkbox> -->
+          <li class="item"><img src="{{item.img}}"></li>
+          <li class="item desc"><span>{{item.name}}</span><span *ngIf=item.isVeg class="veganIcon"></span> <br> <em>{{item.desc}}</em> </li>
+          <li class="item cost">{{item.rate}}</li>
+        </ul>
+      </mat-tab>
+      <mat-tab label="Joy of Asian">
+        <ul *ngFor="let item of asianItemArray; let i = index;" class="items">
+          <!-- <mat-checkbox class="checkboxArea" [(ngModel)]="itemChecked" (change)="checkboxSelectionChange()">Checked</mat-checkbox> -->
+          <li class="item"><img src="{{item.img}}"></li>
+          <li class="item desc"><span>{{item.name}}</span><span *ngIf=item.isVeg class="veganIcon"></span> <br> <em>{{item.desc}}</em> </li>
+          <li class="item cost">{{item.rate}}</li>
+        </ul>
+      </mat-tab>
+      <mat-tab label="Classic Continental">
+        <ul *ngFor="let item of continentItemArray; let i = index;" class="items">
+          <!-- <mat-checkbox class="checkboxArea" [(ngModel)]="itemChecked" (change)="checkboxSelectionChange()">Checked</mat-checkbox> -->
+          <li class="item"><img src="{{item.img}}"></li>
+          <li class="item desc"><span>{{item.name}}</span><span *ngIf=item.isVeg class="veganIcon"></span> <br> <em>{{item.desc}}</em> </li>
+          <li class="item cost">{{item.rate}}</li>
+        </ul>
+      </mat-tab>
+      <mat-tab label="Wanna More">
+        <ul *ngFor="let item of platterArray; let i = index;" class="items">
+          <!-- <mat-checkbox class="checkboxArea" [(ngModel)]="itemChecked" (change)="checkboxSelectionChange()">Checked</mat-checkbox> -->
+          <li class="item"><img src="{{item.img}}"></li>
+          <li class="item desc"><span>{{item.name}}</span><span *ngIf=item.isVeg class="veganIcon"></span> <br> <em>{{item.desc}}</em> </li>
+          <li class="item cost">{{item.rate}}</li>
+        </ul>
+      </mat-tab>
+      <mat-tab label="Refreshment">
+        <ul *ngFor="let item of refreshmentItemArray; let i = index;" class="items">
+          <!-- <mat-checkbox class="checkboxArea" [(ngModel)]="itemChecked" (change)="checkboxSelectionChange()">Checked</mat-checkbox> -->
+          <li class="item"><img src="{{item.img}}"></li>
+          <li class="item desc"><span>{{item.name}}</span><span *ngIf=item.isVeg class="veganIcon"></span> <br> <em>{{item.desc}}</em> </li>
+          <li class="item cost">{{item.rate}}</li>
+        </ul>
+      </mat-tab>
+    </mat-tab-group>
+    <div class="right-arrow arrow" (click)="nextTab()"></div>
+  </div>
+</div>
+</div>
