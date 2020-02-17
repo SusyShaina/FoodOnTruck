@@ -38,7 +38,6 @@
                     <div *dropdownMenu class="dropdown-menu dropdown dropdown-primary" role="menu">
                         <a href="" class="dropdown-item waves-effect waves-light" data-toggle="modal" data-target="#modalLRForm">Get In/Join Us</a>
                         <a href="" class="dropdown-item waves-effect waves-light" data-toggle="modal" data-target="#modalLoginForm">Get In..!!</a>
-                        <a href="" class="dropdown-item waves-effect waves-light" data-toggle="modal" data-target="#modalRegisterForm">Wanna to Join..!!</a>
                     </div>
                 </li>
             </ul>
@@ -59,12 +58,12 @@
                 <!--Body-->
                 <h5 class="modal-body center">Welcome 2 Foodie's Hub..!!</h5>					
                 <div class="modal-body mx-3 center">
-                    <mat-radio-group>
-                        <mat-radio-button value="0">Login Via Mobile</mat-radio-button>
-                        <mat-radio-button value="1">Login Via Email</mat-radio-button>
+                    <mat-radio-group [(ngModel)]="selectedOption">
+                        <mat-radio-button value="email">Login Via Email</mat-radio-button>
+                        <mat-radio-button value="mobile">Login Via Mobile</mat-radio-button>
                     </mat-radio-group>
                 </div>
-                <div class="modal-body mx-3 email">
+                <div class="modal-body mx-3 email" *ngIf="(selectedOption === 'email')">
                     <div class="md-form mb-5">
                         <i class="fa fa-envelope prefix grey-text"></i>
                         <input type="email" id="defaultForm-email" class="form-control validate">
@@ -79,7 +78,7 @@
                         <button class="btn btn-default mt-1">Login<i class="fa fa-sign-in ml-1"></i></button>
                     </div>
                 </div>
-                <div class="modal-body mx-3 mobile">
+                <div class="modal-body mx-3 mobile" *ngIf="(selectedOption === 'mobile')">
                     <div class="md-form mb-5">
                         <i class="fa fa-mobile prefix grey-text"></i>
                         <input type="text" id="defaultForm-mobile" class="form-control validate">

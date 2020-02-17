@@ -6,8 +6,8 @@
 a {
     line-height: 27px;
     font-family: cursive;
-    font-size: 18px;
-    color: floralwhite;
+	font-size: 18px;
+	color: floralwhite;
 }
 
 .navbar-nav.mr-auto a {
@@ -51,6 +51,9 @@ a {
 	font-size: 28px;
 	animation: flash 400ms cubic-bezier(0.23, 1, 0.32, 1) 400ms backwards;
 }
+.modal-dialog.cascading-modal .nav-tabs li {
+	background-color: #2BBBAD;
+}
 .modal-body {
 	animation: faded 800ms ease 800ms backwards;
 }
@@ -61,12 +64,15 @@ a {
 	margin: 0 auto;
 }
 .modal-content {
-	background-color: black;
+	background-color: ivory;
 }
 .form-control {
 	color: ghostwhite !important;
 }
-
+.modal-footer p a {
+	display: contents;
+	color: #2BBBAD !important;
+}
 @-webkit-keyframes flash{ 
 	from{ 
 		-webkit-transform:scale(0,1);

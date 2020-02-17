@@ -2,6 +2,7 @@ import { Component, ViewChild, OnInit } from '@angular/core';
 import { ModalDirective } from 'angular-bootstrap-md/modals';
 import { WindowService } from './window.service';
 import * as firebase from 'firebase';
+import { EmailValidator } from '@angular/forms';
 
 
 @Component({
@@ -15,26 +16,27 @@ export class HeaderComponent implements OnInit {
     phoneNumber: string;
     verificationCode: string;
     user: any;
-  
+    selectedOption = 'email';
+
     constructor(private win: WindowService) { }
     ngOnInit() {
-      this.windowRef = this.win.windowRef
-      this.windowRef.recaptchaVerifier = new firebase.auth.RecaptchaVerifier('recaptcha-container')
-      this.windowRef.recaptchaVerifier.render()
+      this.windowRef = this.win.windowRef;
+      this.windowRef.recaptchaVerifier = new firebase.auth.RecaptchaVerifier('recaptcha-container');
+      this.windowRef.recaptchaVerifier.render();
     }
-  
-  @ViewChild('autoShownModal') public autoShownModal:ModalDirective;
-  public isModalShown:boolean = true;
-   
-  public showModal():void {
+
+  @ViewChild('autoShownModal') public autoShownModal: ModalDirective;
+  public isModalShown = true;
+
+  public showModal(): void {
       this.isModalShown = true;
   }
-   
-  public hideModal():void {
+
+  public hideModal(): void {
       this.autoShownModal.hide();
   }
-   
-  public onHidden():void {
+
+  public onHidden(): void {
       this.isModalShown = false;
   }
 
